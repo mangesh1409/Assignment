@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>  
+</head>
+
+<body>
+    <div class="container">
+
+        <form action=""id="form">
+            <!-- onsubmit="validateData()"  -->
+            <label for="Id">Product ID  <span class="requried">*</span></label>
+            <input type="text" id="Id" name="Id" >
+
+            <label for="title">Product Name <span class="requried">*</span></label>
+            <input type="text" id="title" name="title">
+
+            <label for="quantity">Quantity <span class="requried">*</span></label>
+            <input type="text" id="quantity" name="quantity" >
+
+            <label for="price">Price <span class="requried">*</span></label>
+            <input type="text" id="price" name="price" >
+
+            <label for="description">Description <span class="requried">*</span></label>
+            <input type="text" id="description" name="description">
+
+            <input type="submit"  id="submit" value="Submit">
+        </form>
+    </div>
+    
+    <button id="ser" onclick="showTable()">Check Items</button>
+
+    <table id="myTable">
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Quaniity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+            <th>Description</th>
+            <th>Delete Item</th>
+            <th>Edit Item</th>
+        </tr>
+    </table>
+    <br><br>
+    <div class="div1" id="gt">
+        Grand Total : <span id="grandTotal"></span>
+    </div>
+</body>
+</html>
